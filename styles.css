@@ -28,6 +28,8 @@
 }
 
 .words {
+    display: flex;
+    flex: 1;
     border: solid 1px black;
     padding: 24px;
 }
