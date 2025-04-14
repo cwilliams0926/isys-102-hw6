@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    border: solid 1px black;
+}
+
+.main {
+    border: solid 1px black;
+}
+
+.words {
+    border: solid 1px black;
+}
