@@ -29,7 +29,18 @@
 
 .words {
     display: flex;
-    flex: 1;
     border: solid 1px black;
+    height: 300px;
+}
+
+.number-words {
     padding: 24px;
+    flex: 1;
+    background-color: aquamarine;
+}
+
+.non-number-words {
+    padding: 24px;
+    flex: 1;
+    background-color: beige;
 }
