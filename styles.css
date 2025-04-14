@@ -19,12 +19,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 24px;
 }
 
 .main {
     border: solid 1px black;
+    padding: 24px;
 }
 
 .words {
     border: solid 1px black;
+    padding: 24px;
 }
