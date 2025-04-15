@@ -18,17 +18,25 @@ function makeStringArray() {
 
 function listNumbers(numArray) {
     const numberList = document.querySelector(".number-list");
+
     // iterate through number array
     // create a new <li> and put the number in it
     numArray.forEach((num) => {
-        const number = document.createElement("li");
-        number.textContent = num;
-        numberList.appendChild(number);
+        const numberItem = document.createElement("li");
+        numberItem.textContent = num;
+        numberList.appendChild(numberItem);
     })
 }
 
 function listWords(wordArray) {
+    const wordList = document.querySelector(".non-number-list");
+
     // iterate through word array
-    // append each element to non-number-words <ul>
+    // create a new <li> and put the word in it
+    wordArray.forEach((word) => {
+        const wordItem = document.createElement("li");
+        wordItem.textContent = word;
+        wordList.appendChild(wordItem);
+    })
 }
 
