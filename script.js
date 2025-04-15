@@ -3,10 +3,17 @@ processButton.addEventListener("click", makeStringArray); //getInput is placehol
 
 function makeStringArray() {
     const input = document.querySelector("#sentence").value;
-    // trim input string
+
+    // trim input string and split into array
+    const stringArray = input.trim().split(" ");
+
     // filter array for numbers
+    const numberArray = stringArray.filter(str => /\d/.test(str));
     // filter array for words
-    // pass number array to 
+    const wordArray = stringArray.filter(str => !/\d/.test(str));
+    
+    listNumbers(numberArray);
+    listWords(wordArray);
 }
 
 function listNumbers() {
