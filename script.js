@@ -2,6 +2,8 @@ const processButton = document.querySelector("#process");
 processButton.addEventListener("click", makeStringArray); //getInput is placeholder
 
 function makeStringArray() {
+    removeList(); // Remove previous list items
+
     const input = document.querySelector("#sentence").value;
 
     // trim input string and split into array
@@ -14,6 +16,12 @@ function makeStringArray() {
     
     listNumbers(numberArray);
     listWords(wordArray);
+}
+
+// We should remove the previous list on button press
+function removeList() {
+    const listItems = document.querySelectorAll("li");
+    listItems.forEach((item) => item.remove());
 }
 
 function listNumbers(numArray) {
