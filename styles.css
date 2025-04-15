@@ -32,6 +32,18 @@
 #process {
     width: 72px;
     align-self: center;
+    height: 40px;
+    width: 84px;
+    font-size: 16px;
+    font-weight: 500;
+    border: solid 1px black;
+    background-color: lightgray;
+}
+
+#process:hover {
+    color: lightgrey;
+    background-color: black;
+    cursor: pointer;
 }
 
 .words {
