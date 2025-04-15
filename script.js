@@ -16,12 +16,18 @@ function makeStringArray() {
     listWords(wordArray);
 }
 
-function listNumbers() {
+function listNumbers(numArray) {
+    const numberList = document.querySelector(".number-list");
     // iterate through number array
-    // append each element to number-words <ul>
+    // create a new <li> and put the number in it
+    numArray.forEach((num) => {
+        const number = document.createElement("li");
+        number.textContent = num;
+        numberList.appendChild(number);
+    })
 }
 
-function listWords() {
+function listWords(wordArray) {
     // iterate through word array
     // append each element to non-number-words <ul>
 }
