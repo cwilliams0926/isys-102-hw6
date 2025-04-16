@@ -17,8 +17,8 @@ function makeStringArray() {
       );
     // filter array for words
     const wordArray = stringArray.filter(str => 
-        /[a-zA-Z]/.test(str) ||
-        /,/.test(str)
+        /[a-zA-Z]/.test(str) ||   // test for letters
+        /,/.test(str)             // test for comma
     );
     
     listNumbers(numberArray);
