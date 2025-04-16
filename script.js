@@ -11,7 +11,7 @@ function makeStringArray() {
 
     // filter array for numbers
     const numberArray = stringArray.filter(str => 
-        /[0-9]/.test(str) &&         // test for one number digit
+        /[0-9]/.test(str) &&      // test for one number digit
         !/,/.test(str) &&         // can't contain a comma
         !/[a-zA-Z]/.test(str)     // can't contain any letters
       );
