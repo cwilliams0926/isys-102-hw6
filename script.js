@@ -1,5 +1,5 @@
 const processButton = document.querySelector("#process");
-processButton.addEventListener("click", makeStringArray); //getInput is placeholder
+processButton.addEventListener("click", makeStringArray); 
 
 function makeStringArray() {
     removeList(); // Remove previous list items
